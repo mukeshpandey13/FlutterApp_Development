@@ -1,7 +1,17 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
-  home: Scaffold(
+  home:Home(), 
+));
+
+
+// stateless widget
+class Home extends StatelessWidget {
+  const Home({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
     appBar: AppBar(
       title: Text('MyApp'),
       centerTitle: true,
@@ -27,25 +37,13 @@ void main() => runApp(MaterialApp(
     // for button
     floatingActionButton: FloatingActionButton(
       onPressed: () {},
-      child: Text('click'),
+      child: Text('click me'),
 
 // button color
       backgroundColor: Colors.red[600],
     ),
-  ),
-));
-
-
+  );
+  }
+}
 // NOte (this course lesson)
-// --Background color --color
-// -- button
-//    -- color
-
-// -- button color (line 20)
-// -- text style (line 16-21)
-//      -- change of text style
-
-// -- change font style to IndieFlower
-//    -- go to 'pubspec.yaml' file
-//    -- line no 77 
-//    -- change font using asset
+// --stateless widgets
