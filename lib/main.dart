@@ -20,18 +20,14 @@ class Home extends StatelessWidget {
       backgroundColor: Colors.red[600],
     ),
     body: Center(
-      child: Text(
-        'Hello world',
 
-        // style 
-        style: TextStyle(
-          fontSize: 20.0,
-          fontWeight: FontWeight.bold,
-          letterSpacing: 2.0,
-          color: Colors.grey[600],
-          fontFamily: 'IndieFlower',
-        ),
-      ), 
+      // for image 
+      // ## LOCAL IMAGE
+      child: Image.asset('assetss/image2.jpg'),
+
+
+      // ## NETWORK IMAGE
+      // child: Image(image: NetworkImage('https://images.pexels.com/photos/29276458/pexels-photo-29276458/free-photo-of-colorful-wooden-houses-in-bergen-norway.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'))
     ),
 
     // for button
@@ -46,4 +42,7 @@ class Home extends StatelessWidget {
   }
 }
 // NOte (this course lesson)
-// --stateless widgets
+// --1)Network Image (line2 5)
+//     child:Image.Network('url'),
+// --2)Assets Image(line 26)
+//     child.Image.asset('path'),
